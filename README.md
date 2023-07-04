@@ -49,3 +49,4 @@ jest wpisany w poprawione właściwości `homepage`, na przykład
 
 
 <!-- pusty commit -->
+<!-- drugi commit -->
