@@ -1,0 +1,10 @@
+.gallery-section {
+  display: flex;
+  justify-content: center;
+  height: 0;
+
+  &__photo {
+    margin-top: -32px;
+    margin-bottom: -94px;
+  }
+}
