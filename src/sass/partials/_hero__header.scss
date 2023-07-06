@@ -1,0 +1,88 @@
+    .header {
+        padding-top: 20px;
+        background: #84A178;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        &__logo {
+            fill: #F8D24E;
+        }
+
+        &__nav {
+            align-items: center;
+            flex-wrap: wrap;
+
+            @media (max-width: 1199px) {
+                display: none;
+            }
+        }
+
+        &__nav-list {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.25px;
+        }
+
+        &__nav-item {
+            display: inline;
+            margin-right: 28px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: normal;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+        }
+
+        &__nav-link {
+            color: #FCFCFC;
+
+            &:hover {
+                color: #F8D24E;
+            }
+
+            &:focus {
+                color: #F8D24E;
+            }
+        }
+
+        &__menu-button {
+            display: flex;
+        }
+
+        &__buy-button {
+            display: flex;
+        }
+
+    }
+
+
+    .hero {
+        background: #84A178;
+
+        &__title {
+            display: flex;
+            width: 367px;
+            flex-direction: column;
+            color: #FCFCFC;
+            font-size: 38px;
+            font-family: Seymour One;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.52px;
+            text-transform: uppercase;
+        }
+
+    }
