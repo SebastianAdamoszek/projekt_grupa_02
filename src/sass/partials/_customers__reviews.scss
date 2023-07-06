@@ -1,5 +1,5 @@
 .customer-reviews {
-  background-image: url(./images/Backgroud_mobile.jpg);
+  background-image: url(../images/cow_mobile@2x.png); /* obrazki dodać do images i zaktualizować!!! */
 
   &__item {
     display: flex;
@@ -21,7 +21,8 @@
 
     color: white;
   }
-  ` &__user {
+
+  &__user {
     font-size: 20px;
   }
 }
