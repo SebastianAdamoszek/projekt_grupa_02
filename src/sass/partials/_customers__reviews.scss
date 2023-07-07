@@ -1,5 +1,5 @@
 .customer-reviews {
-  background-image: url(./images/Backgroud_mobile.jpg);
+  // background-image: url(./images/Backgroud_mobile.jpg);
 
   &__item {
     display: flex;
@@ -21,7 +21,7 @@
 
     color: white;
   }
-  ` &__user {
+   &__user {
     font-size: 20px;
   }
 }
