@@ -4,12 +4,11 @@
 
 
 .button-products{
-    font-weight: 600;
     width: 100%;
     max-width: 108px;
     height: 38px;
     font-size: 12px;
-    border: 2px solid #F8D24E;
+    border: 2px solid var(--tertiary-border-color);
     border-radius: 8px;
     background: none;
     @include large{
@@ -19,70 +18,68 @@
         border-radius: 10px;
     }
     &:hover{
-        border-color: #0A8817;
+        border-color:var(--quaternary-border-color);
     }
     &:focus{
-        border-color: #0A8817;
-        color: #FCFCFC;
+        border-color:var(--quaternary-border-color);
+        color: var(--primary-modal-background-color);
     }
 
 }
 
 .button-products[disabled]{
     @extend .button-products;
-        border-color: #ABABAB;
+        border-color: var(--senary-background-color);
         pointer-events: none;
-        color: #000000;
+        color:var(--secondary-icon-color);
 
 }
 
 .button-read-more{
-    font-weight: 600;
     width: 100%;
     max-width: 164px;
     height: 38px;
     font-size: 14px;
     border: none;
     border-radius: 10px;
-    background: #F8D24E;
+    background: var(--tertiary-border-color);
     &:hover{
-        background-color: #0A8817;
+        background-color:var(--quaternary-border-color);
     }
     &:focus{
-        background-color: #0A8817;
-        color: #FCFCFC;
-        fill: #FCFCFC;
+        background-color:var(--quaternary-border-color);
+        color: var(--primary-modal-background-color);
+        fill: var(--primary-modal-background-color);
     }
 }
 
 .button-read-more[disabled]{
     @extend .button-read-more;
-    background-color: #ABABAB;
-    color: #000000;
+    background-color: var(--senary-background-color);
+    color:var(--secondary-icon-color);
     pointer-events: none;
 }
 
 .button-how-its-made{
-    font-weight: 600;
     font-size: 12px;
     border: none;
     background: none;
     text-decoration: underline;
-    color: #F8D24E;
+    color: var(--tertiary-border-color);
     @include large{
         font-size: 14px;
     }
     &:hover{
-        color: #0A8817;
+        color:var(--quaternary-border-color);
     }
     &:focus{
-        color: #FCFCFC;
+        color: var(--primary-modal-background-color);
     }
 }
 
 .button-how-its-made[disabled]{
     @extend .button-how-its-made;
-    color: #ABABAB;
+    color: var(--senary-background-color);
     pointer-events: none;
 }
 
@@ -93,8 +90,8 @@
 
 .button-our-location[disabled]{
     @extend .button-our-location;
-        background-color: #ABABAB;
-        color: #000000;
+        background-color: var(--senary-background-color);
+        color:var(--secondary-icon-color);
         pointer-events: none;
 }
 
@@ -106,9 +103,9 @@
 
 .button-franchise[disabled]{
     @extend .button-franchise;
-        border-color: #ABABAB;
+        border-color: var(--senary-background-color);
         pointer-events: none;
-        color: #000000;
+        color:var(--secondary-icon-color);
 }
 
 .button-buy-now{
@@ -118,7 +115,7 @@
 
 .button-buy-now[disabled]{
     @extend .button-buy-now;
-        background-color: #ABABAB;
-        color: #000000;
+        background-color: var(--senary-background-color);
+        color:var(--secondary-icon-color);
         pointer-events: none;
 }

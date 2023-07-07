@@ -1,5 +1,5 @@
 footer {
-    background-color: aqua;
+    background-color: var(--main-background-color);
     p {
         text-transform: uppercase;
     }
@@ -15,6 +15,6 @@ footer {
 
 .line {
     width: 100%;
-    color: black;
+    color: var(--line-footer);
     border: solid 1px;
 }
