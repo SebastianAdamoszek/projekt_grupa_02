@@ -28,8 +28,10 @@
 
                 <use class="header__icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
-        </button>
-        <button class="header__buy-button" type="button">Buy now</button>
+        <      </button>
+        <button data-modal-open class="button-buy-now" type="button">Buy now <svg height="10px" width="6px">
+                <use href="./images/icons.svg#icon-button-arrow"></use>
+            </svg></button>
     </div>
 </section>
 <!----- HERO --->
@@ -38,15 +40,7 @@
     <div class="container">
         <div class="hero__description">
             <h1 class="hero__title">Ice cream made with passion</h1>
-            <ul class="hero__nav">
-                <li class="hero__nav-item">
-                    <button type="button">Products</button>
-                </li>
-                <li class="hero__nav-item">
-                    <button type="button">How it's made?</button>
-                </li>
-            </ul>
-        </div>
+      
 
         <ul class="hero__points list">
             <li class="hero__points-list">
@@ -58,7 +52,17 @@
                 <p class="hero__points-names">food trucks</p>
             </li>
         </ul>
-
+        </div>
+    <ul class="hero__nav">
+        <li>
+            <button data-modal-open class="button-products" type="button">Products</button>
+    
+            </li>
+            <li>
+                <button data-modal-open class="button-how-its-made" type="button">How it's made?</button>
+    
+                </li>
+    </ul>
         <div class="hero__middle">
             <img src="./images/hero-ice-balls-desktop-1x.png" alt="ice-balls" type="png" class="hero__img" />
             <source media="(min-width: 768px)" scret="
