@@ -21,3 +21,19 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+.container {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include small {
+    max-width: 480px;
+  }
+  @include medium {
+    max-width: 768px;
+  }
+  @include large {
+    max-width: 1200px;
+  }
+}
