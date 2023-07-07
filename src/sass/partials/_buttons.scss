@@ -1,0 +1,124 @@
+@use "../utils/variables"as *;
+@use "../utils/mixins.scss"as *;
+
+
+
+.button-products{
+    font-weight: 600;
+    width: 100%;
+    max-width: 108px;
+    height: 38px;
+    font-size: 12px;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+    background: none;
+    @include large{
+        height: 42px;
+        max-width: 134px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+    &:hover{
+        border-color: #0A8817;
+    }
+    &:focus{
+        border-color: #0A8817;
+        color: #FCFCFC;
+    }
+
+}
+
+.button-products[disabled]{
+    @extend .button-products;
+        border-color: #ABABAB;
+        pointer-events: none;
+        color: #000000;
+
+}
+
+.button-read-more{
+    font-weight: 600;
+    width: 100%;
+    max-width: 164px;
+    height: 38px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #F8D24E;
+    &:hover{
+        background-color: #0A8817;
+    }
+    &:focus{
+        background-color: #0A8817;
+        color: #FCFCFC;
+        fill: #FCFCFC;
+    }
+}
+
+.button-read-more[disabled]{
+    @extend .button-read-more;
+    background-color: #ABABAB;
+    color: #000000;
+    pointer-events: none;
+}
+
+.button-how-its-made{
+    font-weight: 600;
+    font-size: 12px;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #F8D24E;
+    @include large{
+        font-size: 14px;
+    }
+    &:hover{
+        color: #0A8817;
+    }
+    &:focus{
+        color: #FCFCFC;
+    }
+}
+
+.button-how-its-made[disabled]{
+    @extend .button-how-its-made;
+    color: #ABABAB;
+    pointer-events: none;
+}
+
+.button-our-location{
+    @extend .button-read-more;
+    max-width: 196px;
+}
+
+.button-our-location[disabled]{
+    @extend .button-our-location;
+        background-color: #ABABAB;
+        color: #000000;
+        pointer-events: none;
+}
+
+.button-franchise{
+    @extend .button-products;
+    max-width:196px;
+    font-size:14px;
+}
+
+.button-franchise[disabled]{
+    @extend .button-franchise;
+        border-color: #ABABAB;
+        pointer-events: none;
+        color: #000000;
+}
+
+.button-buy-now{
+    @extend .button-read-more;
+    max-width: 152px;
+}
+
+.button-buy-now[disabled]{
+    @extend .button-buy-now;
+        background-color: #ABABAB;
+        color: #000000;
+        pointer-events: none;
+}
