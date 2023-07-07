@@ -3,20 +3,27 @@
 }
 
 .contacts {
-  padding-bottom: 60px;
-
   &__section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 16px;
+    padding-bottom: 60px;
+
+    @include medium {
+      flex-wrap: nowrap;
+    }
+    @include large {
+      gap: 32px;
+    }
   }
   &__wrapper {
     width: 100%;
     height: 412px;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 32px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #ffffff;
+    background-color: #fcfcfc;
     border: 1px solid #e1e1e1;
     border-radius: 24px;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
@@ -24,10 +31,12 @@
     @include medium {
       max-width: 224px;
       height: 537px;
+      padding-left: 24px;
     }
     @include large {
       max-width: 368px;
       height: 542px;
+      padding-left: 52px;
     }
   }
   &__list {
@@ -37,10 +46,50 @@
     background-color: #ffffff;
   }
   &__item-title {
-    background-color: #ffffff;
+    font-family: Montserrat;
+    border-radius: 6px;
+    background: #f8d24e;
+    padding: 4px 22px;
+    width: 80px;
+    height: 22px;
+    color: #131313;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.48px;
+
+    @include medium {
+      padding: 4px 13px;
+      width: 73px;
+      height: 30px;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.64px;
+    }
+
+    &--longer {
+      padding: 4px 22px;
+      width: 134px;
+      font-size: 12px;
+
+      @include medium {
+        padding: 4px 10px;
+        width: 138px;
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 0.64px;
+      }
+    }
   }
   &__item-text {
-    background-color: #ffffff;
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.48px;
   }
   &__links {
     background-color: #ffffff;
@@ -58,12 +107,13 @@
   }
   &__buttons-our-location {
     font-weight: 600;
-    height: 38px;
     font-size: 14px;
+    width: 196px;
+    height: 38px;
     border: none;
     border-radius: 10px;
     background: #f8d24e;
-    width: 196px;
+
     &:hover {
       background-color: #0a8817;
     }
@@ -73,20 +123,23 @@
       fill: #fcfcfc;
     }
   }
+
   &__buttons-franchise {
-    font-size: 14px;
     font-weight: 600;
+    font-size: 14px;
     width: 196px;
     height: 38px;
     border: 2px solid #f8d24e;
     border-radius: 8px;
     background: none;
-    @media screen and (min-width: 1200px) {
+
+    @include large {
       height: 42px;
       min-width: 134px;
       font-size: 14px;
       border-radius: 10px;
     }
+
     &:hover {
       border-color: #0a8817;
     }
