@@ -13,12 +13,17 @@
             fill: #F8D24E;
         }
 
-        &__nav {
+       &__nav {
             align-items: center;
             flex-wrap: wrap;
-
-            @include small {
+            @include small{
                 display: none;
+            }
+            @include medium{
+           display: block
+            }
+            @include large{
+             display:flex
             }
         }
 
