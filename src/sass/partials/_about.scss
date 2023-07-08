@@ -5,13 +5,25 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    column-gap: 12px;
+    row-gap: 12px;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    padding-bottom: 54px;
+    @include medium {
+      padding-bottom: 98px;
+    }
   }
   &__label {
     font-size: 18px;
     font-weight: 700;
+
+    @include medium {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.88px;
+    }
+    @include large {
+      font-size: 30px;
+    }
   }
   &__heading {
     display: flex;
@@ -21,41 +33,93 @@
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1.2px;
-    @include large {
+
+    @include medium {
       flex-direction: row;
       column-gap: 10px;
       justify-content: center;
+      letter-spacing: 2.04px;
+      font-size: 34px;
+    }
+    @include large {
+      font-size: 36px;
+      letter-spacing: 2.16px;
     }
   }
   &__flex {
     display: flex;
-    justify-content: center;
+
     flex-direction: column;
+
     @include medium {
       flex-direction: row;
-      justify-content: space-between;
+    }
+  }
+  &__picture-container {
+    border-radius: 50%;
+    box-shadow: 0 -22px 0 0 #f8d24eb3, 0 -22px 0 0 #d9d9d9;
+    margin: 0 auto 40px;
+    @include medium {
+      box-shadow: 0 -26px 0 0 #f8d24eb3, 0 -26px 0 0 #d9d9d9;
+    }
+    @include large {
+      box-shadow: 0 -39px 0 0 #f8d24eb3, 0 -39px 0 0 #d9d9d9;
     }
   }
   &__picture {
     display: flex;
     justify-content: center;
-    @include medium {
-      min-width: 50%;
-    }
   }
   &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 10px;
-
+    row-gap: 8px;
     text-align: center;
-    font-family: Montserrat;
+    max-width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+
+    @include medium {
+      margin-left: 0;
+      max-width: 45%;
+      text-align: left;
+    }
+    @include large {
+      max-width: 40%;
+    }
+  }
+  &__text {
+    color: var(--primary-font-color);
     font-size: 12px;
     font-weight: 400;
-    line-height: 162%;
+    line-height: 1.76;
+    letter-spacing: 0.48px;
     @include medium {
-      max-width: 50%;
+      line-height: 1.94;
+      letter-spacing: 0.56px;
+    }
+    @include large {
+      font-size: 16px;
+    }
+  }
+  &__button {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary-icon-color);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    margin-top: 24px;
+    @include medium {
+      margin-left: 0;
+      margin-top: 0px;
     }
   }
 }
