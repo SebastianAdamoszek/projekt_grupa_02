@@ -1,72 +1,70 @@
 .header {
-    padding-top: 4px;
-    background: var(--main-background-color);
+  padding-top: 4px;
+  background: var(--main-background-color);
+  align-items: center;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  &__logo {
+    fill: var(--primary-icon-color);
+  }
+
+  &__nav {
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+    @include small {
+      display: none;
     }
 
-    &__logo {
-        fill: var(--primary-icon-color)
+    @include medium {
+      display: block;
     }
 
-    &__nav {
-        align-items: center;
-        flex-wrap: wrap;
-        margin: auto;
-
-        @include small {
-            display: none;
-        }
-
-        @include medium {
-            display: block
-        }
-
-        @include large {
-            display: flex
-        }
+    @include large {
+      display: flex;
     }
+  }
 
-    &__nav-list {
-        display: none;
-        align-items: center;
-        flex-wrap: wrap;
+  &__nav-list {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
 
-        @include large {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-        }
+    @include large {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
     }
+  }
 
-    &__nav-item {
-        display: inline;
-        margin-right: 28px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: normal;
+  &__nav-item {
+    display: inline;
+    margin-right: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
 
-        &:last-child {
-            margin-right: 0;
-        }
-
+    &:last-child {
+      margin-right: 0;
     }
+  }
 
-&__nav-link {
+  &__nav-link {
     color: var(--primary-font-color);
-
 
     &:hover,
     &:focus {
-        color: var(--septenary-font-color);
+      color: var(--septenary-font-color);
     }
-}
+  }
 
-&__menu-button {
+  &__menu-button {
     display: flex;
     width: 32px;
     height: 32px;
@@ -77,178 +75,183 @@
     margin-right: 32px;
 
     @include large {
-        display: none;
+      display: none;
     }
+  }
 }
-}
-
 
 .hero {
-    background: var(--main-background-color);
+  background: var(--main-background-color);
 
-    &__description {
-        padding-top: 50px;
-        justify-content: space-between;
-        display: flex;
+  &__ice-cone {
+    padding-top: 50px;
+    justify-content: space-between;
+    display: flex;
 
-        @include medium {
-            padding-top: 14px;
-        }
-
-        @include large {
-            padding-top: 45px;
-        }
+    @include medium {
+      padding-top: 14px;
     }
 
-    &__title {
-        display: flex;
-        width: 367px;
-        width: 247px;
-        flex-direction: column;
-        color: var(--primary-font-color);
-        font-size: 38px;
-        font-size: 26px;
-        font-family: Seymour One;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 1.52px;
-        text-transform: uppercase;
-
-        @include large {
-            width: 347px;
-            height: 144px;
-            font-size: 36px;
-        }
+    @include large {
+      padding-top: 45px;
     }
+  }
 
-    &__nav {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-    &__points-list {
-        text-align: right;
-    }
+  &__title {
+    display: flex;
+    width: 367px;
+    width: 247px;
+    flex-direction: column;
+    color: var(--primary-font-color);
+    font-size: 38px;
+    font-size: 26px;
+    font-family: Seymour One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
 
-    &__points-numbers {
-        color: black;
-        padding-top: 14px;
-        font-family: Montserrat;
-        font-size: 46px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-        letter-spacing: 1.84px;
+    @include large {
+      width: 347px;
+      height: 144px;
+      font-size: 36px;
     }
+  }
 
-    &__points-names {
-        color: var(--primary-font-color);
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding-bottom: 16px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__points-list {
+    text-align: right;
+  }
 
-        &:last-child {
-            padding-bottom: 0;
-        }
+  &__points-numbers {
+    color: black;
+    padding-top: 14px;
+    font-family: Montserrat;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.84px;
+  }
+
+  &__points-names {
+    color: var(--primary-font-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 16px;
+
+    &:last-child {
+      padding-bottom: 0;
     }
+  }
+}
+.hero__ice-balls {
+  @include hero__ice-balls {
+    display: none;
+  }
+  @include medium {
+    display: contents;
+  }
 }
 
-
 .modal {
-    width: 300px;
-    height: 500px;
-    background-color: var(--quaternary-background-color);
+  width: 300px;
+  height: 500px;
+  background-color: var(--quaternary-background-color);
 }
 
 .is-hidden {
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
-    scale: 0;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  scale: 0;
 }
 
 .button-products {
-    font-weight: 600;
-    width: 100%;
-    max-width: 108px;
-    height: 38px;
-    margin-right: 12px;
-    font-size: 12px;
-    border: 2px solid var(--tertiary-border-color);
-    border-radius: 8px;
-    background: none;
+  font-weight: 600;
+  width: 100%;
+  max-width: 108px;
+  height: 38px;
+  margin-right: 12px;
+  font-size: 12px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: 8px;
+  background: none;
 
-    @include large {
-        height: 42px;
-        max-width: 134px;
-        font-size: 14px;
-        border-radius: 10px;
-
-
-        &:hover {
-            border-color: var(--quaternary-border-color);
-        }
-
-        &:focus {
-            border-color: var(--quaternary-border-color);
-            color: var(--primary-font-color)
-        }
-    }
-}
-
-.button-products[disabled] {
-    @extend .button-products;
-    border-color: var(--nonary-font-color);
-    pointer-events: none;
-    color: #000000;
-}
-
-.button-how-its-made {
-    font-weight: 600;
-    font-size: 12px;
-    border: none;
-    background: none;
-    text-decoration: underline;
-    color: var(--septenary-font-color);
-
-    @include large {
-        font-size: 14px;
-    }
+  @include large {
+    height: 42px;
+    max-width: 134px;
+    font-size: 14px;
+    border-radius: 10px;
 
     &:hover {
-        color: #0A8817;
+      border-color: var(--quaternary-border-color);
     }
 
     &:focus {
-        color: var(--primary-font-color)
+      border-color: var(--quaternary-border-color);
+      color: var(--primary-font-color);
     }
+  }
 }
 
+.button-products[disabled] {
+  @extend .button-products;
+  border-color: var(--nonary-font-color);
+  pointer-events: none;
+  color: #000000;
+}
+
+.button-how-its-made {
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: var(--septenary-font-color);
+
+  @include large {
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: #0a8817;
+  }
+
+  &:focus {
+    color: var(--primary-font-color);
+  }
+}
 
 .button-how-its-made[disabled] {
-    @extend .button-how-its-made;
-    color: var(--nonary-font-color);
-    pointer-events: none;
+  @extend .button-how-its-made;
+  color: var(--nonary-font-color);
+  pointer-events: none;
 }
 
-
 .button-buy-now {
-    @extend .button-read-more;
-    max-width: 152px;
-    visibility: hidden;
+  @extend .button-read-more;
+  max-width: 152px;
+  visibility: hidden;
 
-    @include medium {
-        visibility: visible
-    }
+  @include medium {
+    visibility: visible;
+  }
 }
 
 .button-buy-now[disabled] {
-    @extend .button-buy-now;
-    background-color: #ABABAB;
-    color: #000000;
-    pointer-events: none;
+  @extend .button-buy-now;
+  background-color: #ababab;
+  color: #000000;
+  pointer-events: none;
 }
+
+
