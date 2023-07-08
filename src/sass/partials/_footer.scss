@@ -1,20 +1,97 @@
 footer {
-    background-color: var(--main-background-color);
-    p {
-        text-transform: uppercase;
-    }
-}
-.icon-social__flex {
-    display: flex;
-    justify-content: flex-end;
+  background-color: var(--main-background-color);
+  
+  p {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-font-color);
+  }
+ 
 }
 
-.phone__number {
+ .title {
+    font-size: 34px;
+    padding-top: 16px;
+    padding-bottom: 60px;
+  }
+.space__section {
+    margin-top: 60px;
+}
+.icon-social__flex {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.icons {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding-top: 7px;
+  text-align: center;
+  background-color: var(--primary-icon-color);
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon__gh {
+  background-color: var(--primary-icon-color);
+  color: var(--quinary-icon-color);
+  &:hover,
+  &:focus {
+    color: var(--primary-font-color);
+  }
+}
+
+.icon__tg-fb {
+  background-color: var(--tertiary-border-color);
+  color: var(--tertiary-icon-color);
+
+    &:hover,
+    &:focus {
+          color: var(--primary-font-color) ;
+    }
+}
+.footer__contact {
     text-align: right;
+    padding-bottom: 40px;
+}
+.contact__color-balck {
+  color: var(--secondary-font-color);
+}
+.contact__color-white {
+  color: var(--primary-font-color);
 }
 
 .line {
-    width: 100%;
-    color: var(--line-footer);
-    border: solid 1px;
+ max-width: 100%;
+  color: var(--line-footer);
+  border: solid 1px;
+  
+}
+
+.footer__copy__text {
+  color: var(--quaternary-font-color);
+  text-align: center; 
+  
+  
+}
+
+.footer__copy__space {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.footer__copy__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
