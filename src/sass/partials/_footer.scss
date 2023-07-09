@@ -1,17 +1,20 @@
 footer {
   background-color: var(--main-background-color);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .title__big {
   font-size: 34px;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.6;
   color: var(--primary-font-color);
 }
 .title__small {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.4;
   color: var(--primary-font-color);
   @include large {
     font-weight: 400;
@@ -60,6 +63,7 @@ footer {
 
 .footer__contact {
   text-align: right;
+  letter-spacing: 0.2;
   
 }
 .contact__color-balck {
@@ -87,6 +91,7 @@ footer {
 .footer__copy__text {
   color: var(--quaternary-font-color);
   text-align: center;
+  letter-spacing: 0.2;
 }
 
 
