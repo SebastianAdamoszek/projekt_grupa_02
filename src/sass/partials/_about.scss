@@ -85,6 +85,7 @@
       margin-left: 0;
       max-width: 45%;
       text-align: left;
+      margin-top: -50px;
     }
     @include large {
       max-width: 40%;
@@ -105,20 +106,21 @@
     }
   }
   &__button {
-    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
     color: var(--secondary-icon-color);
     text-align: center;
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 1.28;
     margin-top: 24px;
     @include medium {
       margin-left: 0;
-      margin-top: 0px;
+      margin-top: 10px;
+    }
+    @include large {
+      margin-top: 54px;
     }
   }
 }

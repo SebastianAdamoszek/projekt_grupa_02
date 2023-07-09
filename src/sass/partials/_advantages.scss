@@ -16,41 +16,101 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 94px;
+    margin-bottom: 68px;
+    @include small {
+      margin-bottom: 81px;
+    }
 
     @include medium {
       flex-direction: row;
       column-gap: 80px;
+      margin-bottom: 204px;
     }
     @include large {
       column-gap: 32px;
+      margin-bottom: 178px;
     }
   }
   &__item {
     display: flex;
+  }
+  &__wrapper {
+    display: flex;
+    max-width: 230px;
+    margin: 0 auto;
+    color: var(--primary-font-color);
+    position: relative;
+
+    @include medium {
+      row-gap: 12px;
+      max-width: 152px;
+    }
+    @include large {
+      max-width: 368px;
+    }
+    &--cow::before {
+      content: url(/src/images/cow-color.svg);
+      width: 55px;
+      height: 55px;
+      top: -70px;
+      left: 90px;
+      position: absolute;
+      @include medium {
+        left: 50px;
+      }
+      @include large {
+        left: 153px;
+      }
+    }
+    &--weight::before {
+      content: url(/src/images/weight-color.svg);
+      width: 55px;
+      height: 55px;
+      top: -70px;
+      left: 90px;
+      position: absolute;
+      @include medium {
+        left: 50px;
+      }
+      @include large {
+        left: 153px;
+      }
+    }
+    &--ice-cream::before {
+      content: url(/src/images/ice-color.svg);
+      width: 55px;
+      height: 55px;
+      top: -70px;
+      left: 90px;
+      position: absolute;
+      @include medium {
+        left: 50px;
+      }
+      @include large {
+        left: 153px;
+      }
+    }
   }
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 16px;
-    max-width: 230px;
-    margin: 0 auto;
-    color: var(--primary-font-color);
+    @include medium {
+      row-gap: 12px;
+    }
   }
-  @include medium {
-    row-gap: 12px;
-  }
-
   &__title {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.44px;
+    text-transform: uppercase;
     @include medium {
       font-size: 48px;
       letter-spacing: 1.92px;
     }
   }
-  &__text {
+  &__description {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.7;
@@ -60,7 +120,7 @@
     }
     @include large {
       font-size: 16px;
-      line-height: 1, 76;
+      line-height: 1.76;
       letter-spacing: 0.32px;
     }
   }
