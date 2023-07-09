@@ -1,4 +1,8 @@
 .gallery-section {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
   &__photo {
     margin-top: -32px;
     position: absolute;
@@ -13,7 +17,6 @@
     }
     @include large {
       margin-top: -78px;
-      left: 93px;
       & > img {
         border-radius: 28px;
       }
