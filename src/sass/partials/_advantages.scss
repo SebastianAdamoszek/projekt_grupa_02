@@ -57,10 +57,16 @@
       position: absolute;
       @include medium {
         left: 50px;
+        transition-property: scale;
+        transition-duration: 400ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
       @include large {
         left: 153px;
       }
+    }
+    &:hover::before {
+      scale: 1.4;
     }
     &--weight::before {
       content: url(/src/images/weight-color.svg);
@@ -71,6 +77,9 @@
       position: absolute;
       @include medium {
         left: 50px;
+        transition-property: scale;
+        transition-duration: 400ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
       @include large {
         left: 153px;
@@ -85,6 +94,9 @@
       position: absolute;
       @include medium {
         left: 50px;
+        transition-property: scale;
+        transition-duration: 400ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
       @include large {
         left: 153px;
