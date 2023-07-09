@@ -50,7 +50,6 @@ footer {
   padding-top: 7px;
   text-align: center;
   background-color: var(--primary-icon-color);
-  cursor: pointer;
   &:hover .icon__gh,
   &:focus .icon__gh,
   &:hover .icon__tg-fb,
@@ -80,6 +79,7 @@ footer {
   text-align: right;
   letter-spacing: 0.2;
   font-weight: 700;
+
 }
 .contact__color-balck {
   color: var(--secondary-font-color);
