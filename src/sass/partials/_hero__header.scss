@@ -272,19 +272,9 @@ padding-top: 11px;
         }
   }
 
-  &__ice-picture {
-position: absolute;
-width: 177px;
+  &__img-picture {
+position: absolute
 
-
-    @include medium {
-        width: 268px;
-    }
-
-    @include large {
-        width: 456px;
-           
-    }
 } 
 
 &__dots {

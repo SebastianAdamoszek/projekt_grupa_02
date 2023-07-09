@@ -80,23 +80,24 @@
                 </li>
             </ul>
             <div class="hero__ice-picture">
-                <picture>
-                    <source media="(min-width: 320px)" srcset="
-                            ./images/hero-ice-cone-mobile-2x.png 2x, 
-                            ./images/hero-ice-cone-mobile-1x.png 1x " />
-                    <source media="(min-width: 480px)" srcset="
-                         ./images/hero-ice-cone-480-2x.png 2x, 
-                         ./images/hero-ice-cone-480-1x.png 1x " />
-                    <source media="(min-width: 768px)" srcset="
-                         ./images/hero-ice-cone-tablet-2x.png 2x, 
-                         ./images/hero-ice-cone-tablet-1x.png 1x " />
-                    <source media="(min-width: 1200px)" srcset="
-                        ./images/hero-ice-cone-desktop-2x.png 2x, 
-                        ./images/hero-ice-cone-desktop-1x.png 1x " />
-                    <img src="./images/hero-ice-cone-desktop-1x.png" 
-                    alt="ice-in-cone" 
-                    class="hero__img-cone" />
-                </picture>
+            <source srcset="
+                                        ./images/hero-ice-cone-mobile-2x.png 2x,
+                                        ./images/hero-ice-cone-mobile-1x.png 1x" 
+                                        media="(max-width: 479px)">
+            <source srcset="
+                                     ./images/hero-ice-cone-480-2x.png 2x,
+                                     ./images/hero-ice-cone-480-1x.png 1x " 
+                                     media="(min-width: 480px) and (max-width: 767px)">
+            <source srcset="
+                                     ./images/hero-ice-cone-tablet-2x.png 2x,
+                                     ./images/hero-ice-cone-tablet-1x.png 1x " 
+                                     media="(min-width: 768px) and (max-width: 1199px)">
+            <source srcset="
+                                    ./images/hero-ice-cone-desktop-2x.png 2x,
+                                    ./images/hero-ice-cone-desktop-1x.png 1x " 
+                                    media="(min-width: 1200px)">
+            <img src="./images/hero-ice-cone-desktop-1x.png" alt="ice-in-cone" class="hero__img-cone" />
+            </picture>
             </div>
 
         </div>
