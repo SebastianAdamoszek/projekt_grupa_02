@@ -1,6 +1,6 @@
 <section class="header">
     <div class="container header__container">
-        <svg class="header__logo" width="60" height="60">
+        <svg class="header__logo">
             <use href="./images/icons.svg#icon-logo-hero"></use>
         </svg>
         <nav class="header__nav list">
@@ -9,7 +9,8 @@
                     <a href="#" target="_blank" rel="norefferer" class="header__nav-link link">Home</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" target="_blank" rel="norefferer" class="header__nav-link link">How it's made?</a>
+                    <a href="#" target="_blank;
+                    height: 44px;lank" rel="norefferer" class="header__nav-link link">How it's made?</a>
                 </li>
                 <li class="header__nav-item">
                     <a href="#" target="_blank" rel="norefferer" class="header__nav-link link">Our products</a>
@@ -25,39 +26,34 @@
                 <use class="header__icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
         </button>
+
         <button data-modal-open class="button-buy-now" type="button">
-            Buy now<svg height="10px" width="6px">
+            Buy now<svg height="12px" width="12px">
                 <use href="./images/icons.svg#icon-arrow-button"></use>
             </svg>
         </button>
+
     </div>
 </section>
 <!----- HERO --->
-
-<section class="hero hero__dots">
-    <div class="container hero__container">
-        <div class="hero__ice-cone">
-            <h1 class="hero__title">Ice cream made with passion</h1>
-            <div class="hero__buttons">
-                <button data-modal-open class="button-products" type="button">Products</button>
-                <button data-modal-open class="button-how-its-made" type="button">How it's made?</button>
-            </div>
-            <div class="hero__ice-balls">
-                <picture>
-                    <source media="(min-width:1200px)" 
-                    srcset=
-                    "./images/hero-ice-balls-desktop-2x.png 2x, 
-                    ./images/hero-ice-balls-desktop-1x.png 1x" 
-                    />
-                    <source media="(min-width:768px)" 
-                    srcset=
-                    "./images/hero-ice-balls-tablet-2x.png 2x, 
-                    ./images/hero-ice-balls-tablet-1x.png 1x" 
-                    />
-                    <img src="./images/hero-ice-balls-desktop-1x.png" 
-                    alt="ice-balls" />
-                </picture>
-                <div class="hero-text-arrow">
+<section class="hero">
+    <div class="container">
+        <h1 class="hero__title">Ice cream made with
+            <span class="hero__title--bigger">passion</span>
+        </h1>
+        <div class="hero__buttons">
+            <button data-modal-open class="button-products" type="button">Products</button>
+            <button data-modal-open class="button-how-its-made" type="button">How it's made?</button>
+        </div>
+        <div class="hero__ice-balls">
+            <picture>
+                <source media="(min-width:1200px)" srcset="./images/hero-ice-balls-desktop-2x.png 2x, 
+                            ./images/hero-ice-balls-desktop-1x.png 1x" />
+                <source media="(min-width:768px)" srcset="./images/hero-ice-balls-tablet-2x.png 2x, 
+                            ./images/hero-ice-balls-tablet-1x.png 1x" />
+                <img src="./images/hero-ice-balls-desktop-1x.png" alt="ice-balls" />
+            </picture>
+            <div class="hero__text-middle">
                 <p class="hero__text">
                     Indulge in a scoop of ice cream made with passion and treat your taste buds to an
                     unforgettable experience!
@@ -66,44 +62,27 @@
                     <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
             </div>
-            </div>
         </div>
-        <div class="hero__right">
-            <ul class="hero__points list">
-                <li class="hero__points-list">
-                    <p class="hero__points-numbers">16</p>
-                    <p class="hero__points-names">cafes</p>
-                </li>
-                <li class="hero__points-list">
-                    <p class="hero__points-numbers">23</p>
-                    <p class="hero__points-names">food trucks</p>
-                </li>
-            </ul>
-            <div class="hero__ice-picture">
-            <source srcset="
+
+        <div class="hero__picture-wrapper">
+            <picture class="hero__picture">
+                <source srcset="
                                         ./images/hero-ice-cone-mobile-2x.png 2x,
-                                        ./images/hero-ice-cone-mobile-1x.png 1x" 
-                                        media="(max-width: 479px)">
-            <source srcset="
+                                        ./images/hero-ice-cone-mobile-1x.png 1x" media="(max-width: 479px)
+                                        ">
+                <source srcset="
                                      ./images/hero-ice-cone-480-2x.png 2x,
-                                     ./images/hero-ice-cone-480-1x.png 1x " 
-                                     media="(min-width: 480px) and (max-width: 767px)">
-            <source srcset="
+                                     ./images/hero-ice-cone-480-1x.png 1x " media="(min-width: 480px) and (max-width: 767px)
+                    ">
+                <source srcset="
                                      ./images/hero-ice-cone-tablet-2x.png 2x,
-                                     ./images/hero-ice-cone-tablet-1x.png 1x " 
-                                     media="(min-width: 768px) and (max-width: 1199px)">
-            <source srcset="
+                                     ./images/hero-ice-cone-tablet-1x.png 1x " media="(min-width: 768px) and (max-width: 1199px)
+                    ">
+                <source srcset="
                                     ./images/hero-ice-cone-desktop-2x.png 2x,
-                                    ./images/hero-ice-cone-desktop-1x.png 1x " 
-                                    media="(min-width: 1200px)">
-            <img src="./images/hero-ice-cone-desktop-1x.png" alt="ice-in-cone" class="hero__img-cone" />
+                                    ./images/hero-ice-cone-desktop-1x.png 1x " media="(min-width: 1200px)">
+                <img src="./images/hero-ice-cone-desktop-1x.png" alt="ice-in-cone" class="hero__img-cone" />
             </picture>
-            </div>
-
         </div>
-
     </div>
-    </div>
-
-
 </section>
