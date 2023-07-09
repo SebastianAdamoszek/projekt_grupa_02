@@ -1,0 +1,144 @@
+footer {
+  background-color: var(--main-background-color);
+}
+
+.title__big {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary-font-color);
+}
+.title__small {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary-font-color);
+  @include large {
+    font-weight: 400;
+  }
+}
+.space__section {
+  margin-top: 60px;
+}
+.icon-social__flex {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.icons {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding-top: 7px;
+  text-align: center;
+  background-color: var(--primary-icon-color);
+  cursor: pointer;
+  &:hover .icon__gh,
+  &:focus .icon__gh,
+  &:hover .icon__tg-fb,
+  &:focus .icon__tg-fb {
+    fill: var(--primary-font-color);
+  }
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon__gh {
+  background-color: var(--primary-icon-color);
+  color: var(--quinary-icon-color);
+}
+
+.icon__tg-fb {
+  background-color: var(--tertiary-border-color);
+  color: var(--tertiary-icon-color);
+}
+
+.footer__contact {
+  text-align: right;
+  
+}
+.contact__color-balck {
+  color: var(--secondary-font-color);
+}
+.contact__color-white {
+  color: var(--primary-font-color);
+}
+
+.line__relative {
+  color: var(--line-footer);
+  position: relative;
+  bottom: 86px;
+  max-width: 1168px;
+  border: solid 1px;
+  margin: 0 auto;
+ @include medium {
+    bottom: 50px;
+  }
+  @include large {
+    bottom: 44px;
+  }
+}
+
+.footer__copy__text {
+  color: var(--quaternary-font-color);
+  text-align: center;
+}
+
+
+.footer__copy__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 24px;
+  @include medium {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 12px;
+  }
+}
+.footer__box__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  @include medium {
+    flex-direction: row;
+    align-items: last baseline;
+    padding-bottom: 44px;
+  }
+   @include large {
+   padding-bottom: 72px;
+  }
+}
+.footer__title__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 60px;
+  @include medium {
+    gap: 8px;
+    margin-bottom: 0px;
+  }
+  @include large {
+    gap: 14px;
+  }
+}
+.footer__contact__box__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  @include medium {
+    gap: 34px;
+  }
+  @include large {
+    gap: 40px;
+  }
+}

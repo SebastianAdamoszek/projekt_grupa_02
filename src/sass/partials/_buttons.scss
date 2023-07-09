@@ -1,0 +1,118 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins.scss' as *;
+
+.button-products {
+  width: 100%;
+  max-width: 108px;
+  height: 38px;
+  font-size: 12px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: 8px;
+  background: none;
+  @include large {
+    height: 42px;
+    max-width: 134px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  &:hover {
+    border-color: var(--quaternary-border-color);
+  }
+  &:focus {
+    border-color: var(--quaternary-border-color);
+    color: var(--primary-modal-background-color);
+  }
+}
+
+.button-products[disabled] {
+  @extend .button-products;
+  border-color: var(--senary-background-color);
+  pointer-events: none;
+  color: var(--secondary-icon-color);
+}
+
+.button-read-more {
+  width: 100%;
+  max-width: 164px;
+  height: 38px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  background: var(--tertiary-border-color);
+  &:hover {
+    background-color: var(--quaternary-border-color);
+  }
+  &:focus {
+    background-color: var(--quaternary-border-color);
+    color: var(--primary-modal-background-color);
+    fill: var(--primary-modal-background-color);
+  }
+}
+
+.button-read-more[disabled] {
+  @extend .button-read-more;
+  background-color: var(--senary-background-color);
+  color: var(--secondary-icon-color);
+  pointer-events: none;
+}
+
+.button-how-its-made {
+  font-size: 12px;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: var(--tertiary-border-color);
+  @include large {
+    font-size: 14px;
+  }
+  &:hover {
+    color: var(--quaternary-border-color);
+  }
+  &:focus {
+    color: var(--primary-modal-background-color);
+  }
+}
+
+.button-how-its-made[disabled] {
+  @extend .button-how-its-made;
+  color: var(--senary-background-color);
+  pointer-events: none;
+}
+
+.button-our-location {
+  @extend .button-read-more;
+  max-width: 196px;
+}
+
+.button-our-location[disabled] {
+  @extend .button-our-location;
+  background-color: var(--senary-background-color);
+  color: var(--secondary-icon-color);
+  pointer-events: none;
+}
+
+.button-franchise {
+  @extend .button-products;
+  max-width: 196px;
+  font-size: 14px;
+  margin-right: 0; /* przyciski dla mobile nie były w tej samej linii - sekcja contacts */
+}
+
+.button-franchise[disabled] {
+  @extend .button-franchise;
+  border-color: var(--senary-background-color);
+  pointer-events: none;
+  color: var(--secondary-icon-color);
+}
+
+.button-buy-now {
+  @extend .button-read-more;
+  max-width: 152px;
+}
+
+.button-buy-now[disabled] {
+  @extend .button-buy-now;
+  background-color: var(--senary-background-color);
+  color: var(--secondary-icon-color);
+  pointer-events: none;
+}

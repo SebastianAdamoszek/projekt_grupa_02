@@ -1,0 +1,402 @@
+.header {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+
+    @include medium {
+        padding: 0 32px;
+        
+
+        @include large {
+            padding: 0 16px;
+        }
+    }
+  }
+
+  &__logo {
+    fill: var(--primary-icon-color);
+  }
+
+  &__nav {
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+    @include small {
+      display: none;
+    }
+
+    @include medium {
+      display: block;
+    }
+
+    @include large {
+      display: flex;
+    }
+  }
+
+  &__nav-list {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include large {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__nav-item {
+    display: inline;
+    margin-right: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__nav-link {
+    color: var(--primary-font-color);
+
+    &:hover,
+    &:focus {
+      color: var(--septenary-font-color);
+    }
+  }
+
+  &__menu-button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    border: none;
+    padding: 0;
+    fill: white;
+    background: transparent;
+
+    @include large {
+      display: none;
+    }
+  }
+
+
+}
+
+.hero {
+position: relative;
+height: 502px;
+
+&__container {
+    display: flex;
+    justify-content: space-between;
+
+    
+    @include medium {
+    padding: 0 32px;
+    }
+
+      @include large {
+      padding: 25px 16px;
+      }
+}
+  &__ice-cone {
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    @include small {
+        padding-top: 40px;
+    }
+
+    @include medium {
+      padding-top: 14px;
+    }
+  }
+
+  &__title {
+    height: 97px;
+    max-width: 247px;
+    flex-direction: column;
+    color: var(--primary-font-color);
+    font-size: 26px;
+    font-family: Seymour One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+
+    @include small {
+    letter-spacing: 1.04px;
+    }
+
+    @include large {
+      max-width: 347px;
+      height: 144px;
+      font-size: 36px;
+      
+    }
+  }
+
+  &__buttons {
+   
+    align-items: center;
+    gap: 12px;
+    padding-top: 32px;
+
+    @include medium {
+    padding-top: 24px;
+    }
+    
+    @include large {
+    padding-top: 28px;
+    }
+
+  }
+
+  &__ice-balls {
+      @include hero__ice-balls {
+          display: none;
+      }
+
+      @include medium {
+          display: flex;
+          flex-direction: row;
+          padding-top: 12px;
+          align-items: center;
+      }
+
+      @include large {
+
+          align-items: center;
+          padding-top: 42px;
+      }
+  }
+
+  &__text {
+      color: var(--primary-font-color);
+      font-family: DM Sans;
+      width: 165px;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      margin-left: 12px;
+ 
+      @include large {
+        width: 200px;
+        font-size: 14px;
+        margin-left: 16px;
+        margin-top: 35px;
+     
+        }
+      }
+  
+
+  &__arrow {
+      fill: var(--primary-font-color);
+    margin-left: 16px;
+    margin-top: 24px;
+
+    @include medium {
+        margin-top: 29px;
+    }
+  
+  }
+
+  &__points {
+    display: none;
+    text-align: right;
+    margin: right;
+ 
+   @include medium {
+  display: contents;
+    padding-top: 20px;
+    }
+    }
+
+    &__points-list {
+        
+@include medium {
+    padding-top: 8px;
+
+  
+}
+}
+        @include large {
+padding-top: 11px;
+}
+
+  &__points-numbers {
+    color: black;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.84px;
+
+    @include large {
+        font-size: 46px;
+    }
+  }
+
+  &__points-names {
+  
+    color: var(--primary-font-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ 
+
+    @include medium {
+            font-size: 8px;
+                padding-bottom: 4px;
+              }
+          
+
+
+        @include large {
+            font-size: 14px;
+            padding-bottom: 16px;
+        }
+  }
+
+  &__img-picture {
+position: absolute
+
+} 
+
+&__dots {
+  background-image: url(../images/hero-dots-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 520px;
+  fill: yellow;
+
+  @include small {
+    height: 349px;
+    background-image: url(../images/hero-dots-480.png);
+ 
+  }
+
+  @include medium {
+    height: 349px;
+    background-image: url(../images/hero-dots-tablet.png);
+    background-position: bottom;
+  }
+
+  @include large {
+    height: 591px;
+    background-image: url(../images/hero-dots-desktop.png);
+    background-position: bottom;
+  }
+}
+    
+  }
+
+
+.modal {
+  width: 300px;
+  height: 500px;
+  background-color: var(--quaternary-background-color);
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  scale: 0;
+}
+
+.button-products {
+  font-weight: 600;
+  width: 100%;
+  max-width: 108px;
+  height: 38px;
+  margin-right: 12px;
+  font-size: 12px;
+  border: 2px solid var(--tertiary-border-color);
+  border-radius: 8px;
+  background: none;
+
+  @include large {
+    height: 42px;
+    max-width: 134px;
+    font-size: 14px;
+    border-radius: 10px;
+
+    &:hover {
+      border-color: var(--quaternary-border-color);
+    }
+
+    &:focus {
+      border-color: var(--quaternary-border-color);
+      color: var(--primary-font-color);
+    }
+  }
+}
+
+.button-products[disabled] {
+  @extend .button-products;
+  border-color: var(--nonary-font-color);
+  pointer-events: none;
+  color: #000000;
+}
+
+.button-how-its-made {
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: var(--septenary-font-color);
+
+  @include large {
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: #0a8817;
+  }
+
+  &:focus {
+    color: var(--primary-font-color);
+  }
+}
+
+.button-how-its-made[disabled] {
+  @extend .button-how-its-made;
+  color: var(--nonary-font-color);
+  pointer-events: none;
+}
+
+.button-buy-now {
+  @extend .button-read-more;
+  margin-left: 32px;
+  max-width: 152px;
+  visibility: hidden;
+
+  @include medium {
+    visibility: visible;
+  }
+}
+
+.button-buy-now[disabled] {
+  @extend .button-buy-now;
+  background-color: #ababab;
+  color: #000000;
+  pointer-events: none;
+}
+
+
