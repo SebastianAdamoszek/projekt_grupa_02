@@ -9,6 +9,12 @@ footer {
   font-weight: 700;
   letter-spacing: 0.6;
   color: var(--primary-font-color);
+  @include medium {
+   font-size: 48px;
+  }
+  @include large {
+    font-size: 58px;
+  }
 }
 .title__small {
   font-size: 18px;
@@ -16,8 +22,12 @@ footer {
   font-weight: 700;
   letter-spacing: 0.4;
   color: var(--primary-font-color);
+   @include medium {
+   font-size: 26px;
+  }
   @include large {
     font-weight: 400;
+    font-size: 30px;
   }
 }
 .space__section {
@@ -91,7 +101,12 @@ footer {
 .footer__copy__text {
   color: var(--quaternary-font-color);
   text-align: center;
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0.2;
+  @include large {    
+    font-size: 12px;
+  }
 }
 
 
