@@ -9,11 +9,13 @@ footer {
   font-weight: 700;
   letter-spacing: 0.6;
   color: var(--primary-font-color);
+  width: 165px;
   @include medium {
-   font-size: 48px;
+    font-size: 48px;
   }
   @include large {
     font-size: 58px;
+    width: 100%;
   }
 }
 .title__small {
@@ -22,12 +24,15 @@ footer {
   font-weight: 700;
   letter-spacing: 0.4;
   color: var(--primary-font-color);
-   @include medium {
-   font-size: 26px;
+  width: 240px;
+  @include medium {
+    font-size: 26px;
+    width: 340px;
   }
   @include large {
     font-weight: 400;
     font-size: 30px;
+    width: 100%;
   }
 }
 .space__section {
@@ -74,13 +79,14 @@ footer {
 .footer__contact {
   text-align: right;
   letter-spacing: 0.2;
-  
+  font-weight: 700;
 }
 .contact__color-balck {
   color: var(--secondary-font-color);
 }
 .contact__color-white {
   color: var(--primary-font-color);
+  white-space: nowrap;
 }
 
 .line__relative {
@@ -90,7 +96,7 @@ footer {
   max-width: 1168px;
   border: solid 1px;
   margin: 0 auto;
- @include medium {
+  @include medium {
     bottom: 50px;
   }
   @include large {
@@ -104,11 +110,10 @@ footer {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.2;
-  @include large {    
+  @include large {
     font-size: 12px;
   }
 }
-
 
 .footer__copy__flex {
   display: flex;
@@ -132,8 +137,8 @@ footer {
     align-items: last baseline;
     padding-bottom: 44px;
   }
-   @include large {
-   padding-bottom: 72px;
+  @include large {
+    padding-bottom: 72px;
   }
 }
 .footer__title__flex {
