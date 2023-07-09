@@ -1,5 +1,4 @@
 .header {
-
   &__container {
     display: flex;
     justify-content: space-between;
@@ -18,11 +17,8 @@
       @include large {
         padding: 0 16px;
         padding-top: 8px;
-
-
       }
     }
-
   }
 
   &__logo {
@@ -39,8 +35,6 @@
       width: 60px;
       height: 65px;
     }
-
-
   }
 
   &__nav {
@@ -104,7 +98,6 @@
     fill: white;
     background: transparent;
 
-
     @include large {
       display: none;
     }
@@ -122,9 +115,8 @@
   }
 
   @include large {
-    margin: 0
+    margin: 0;
   }
-
 }
 
 .hero {
@@ -164,7 +156,6 @@
     margin-top: 50px;
     margin-bottom: 32px;
 
-
     @include small {
       margin-top: 40px;
     }
@@ -183,12 +174,10 @@
     &--bigger {
       font-size: 32px;
     }
-
   }
 
   &__picture {
     margin-top: 19px;
-
   }
 
   &__buttons {
@@ -211,7 +200,6 @@
   }
 
   &__text-middle {
-
     @include medium {
       display: contents;
       display: flex;
@@ -289,14 +277,12 @@
     padding-bottom: 16px;
   }
 
-
   &__picture-wrapper {
     margin-left: 63px;
 
     @include small {
       margin-left: 222px;
       margin-top: -95px;
-
     }
 
     @include medium {
@@ -308,8 +294,5 @@
       margin-left: 620px;
       margin-top: -510px;
     }
-
-
   }
-
 }

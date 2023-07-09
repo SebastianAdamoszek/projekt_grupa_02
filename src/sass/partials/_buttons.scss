@@ -62,8 +62,13 @@
   background: none;
   text-decoration: underline;
   color: var(--tertiary-border-color);
+  @include medium {
+    width: 114px;
+  }
   @include large {
     font-size: 14px;
+    width: 154px;
+    padding: 12px 21px 11px;
   }
   &:hover {
     color: var(--quaternary-border-color);
