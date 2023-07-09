@@ -32,7 +32,6 @@ footer {
   padding-top: 7px;
   text-align: center;
   background-color: var(--primary-icon-color);
-  cursor: pointer;
   &:hover .icon__gh,
   &:focus .icon__gh,
   &:hover .icon__tg-fb,
@@ -60,7 +59,6 @@ footer {
 
 .footer__contact {
   text-align: right;
-  
 }
 .contact__color-balck {
   color: var(--secondary-font-color);
@@ -76,7 +74,7 @@ footer {
   max-width: 1168px;
   border: solid 1px;
   margin: 0 auto;
- @include medium {
+  @include medium {
     bottom: 50px;
   }
   @include large {
@@ -88,7 +86,6 @@ footer {
   color: var(--quaternary-font-color);
   text-align: center;
 }
-
 
 .footer__copy__flex {
   display: flex;
@@ -112,8 +109,8 @@ footer {
     align-items: last baseline;
     padding-bottom: 44px;
   }
-   @include large {
-   padding-bottom: 72px;
+  @include large {
+    padding-bottom: 72px;
   }
 }
 .footer__title__flex {
