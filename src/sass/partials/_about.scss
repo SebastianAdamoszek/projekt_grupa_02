@@ -59,6 +59,12 @@
     border-radius: 50%;
     box-shadow: 0 -22px 0 0 #f8d24eb3, 0 -22px 0 0 #d9d9d9;
     margin: 0 auto 40px;
+    transition-property: scale;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      scale: 1.1;
+    }
     @include medium {
       box-shadow: 0 -26px 0 0 #f8d24eb3, 0 -26px 0 0 #d9d9d9;
     }
