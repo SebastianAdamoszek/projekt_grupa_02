@@ -87,6 +87,13 @@ footer {
   text-align: right;
   letter-spacing: 0.2;
   font-weight: 700;
+  font-size: 12px;
+   @include medium {
+     font-size: 14px;
+  }
+  @include large {
+     font-size: 16px;
+  }
 }
 .contact__color-balck {
   color: var(--secondary-font-color);
