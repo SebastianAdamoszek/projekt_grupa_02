@@ -1,4 +1,5 @@
 .header {
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -17,8 +18,11 @@
       @include large {
         padding: 0 16px;
         padding-top: 8px;
+
+
       }
     }
+
   }
 
   &__logo {
@@ -35,6 +39,8 @@
       width: 60px;
       height: 65px;
     }
+
+
   }
 
   &__nav {
@@ -98,6 +104,7 @@
     fill: white;
     background: transparent;
 
+
     @include large {
       display: none;
     }
@@ -115,8 +122,9 @@
   }
 
   @include large {
-    margin: 0;
+    margin: 0
   }
+
 }
 
 .hero {
@@ -135,6 +143,7 @@
     background-image: url(../images/hero-dots-tablet.png);
     background-position: bottom;
     padding-left: 12px;
+    padding-right: 12px;
   }
 
   @include large {
@@ -142,6 +151,31 @@
     background-position: bottom;
     height: 591px;
     padding-top: 45px;
+  }
+
+  &__container {
+    @include medium {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include large {
+      align-items: flex-start;
+    }
+  }
+
+  &__left-side {
+
+    @include medium {
+      flex-direction: column;
+      display: flex;
+      width: 377px;
+
+      @include large {
+        width: 584px;
+      }
+    }
   }
 
   &__title {
@@ -156,6 +190,7 @@
     margin-top: 50px;
     margin-bottom: 32px;
 
+
     @include small {
       margin-top: 40px;
     }
@@ -169,15 +204,19 @@
       max-width: 367px;
       font-size: 38px;
       margin-bottom: 28px;
+      margin-top: 0;
+
     }
 
     &--bigger {
       font-size: 32px;
     }
+
   }
 
   &__picture {
     margin-top: 19px;
+
   }
 
   &__buttons {
@@ -196,15 +235,19 @@
 
     @include large {
       padding-top: 42px;
+
     }
   }
 
   &__text-middle {
+    display: none;
+
     @include medium {
       display: contents;
       display: flex;
       flex-direction: column;
       padding-left: 32px;
+
       gap: 29px;
       padding-top: 27px;
     }
@@ -212,11 +255,11 @@
     @include large {
       padding-top: 67px;
       gap: 24px;
+      padding-left: 16px;
     }
   }
 
   &__text {
-    max-width: 200px;
     color: var(--primary-font-color);
     font-family: DM Sans;
     font-size: 14px;
@@ -226,12 +269,12 @@
 
     @include medium {
       font-size: 12px;
-      max-width: 165px;
+      width: 165px;
     }
 
     @include large {
       font-size: 14px;
-      max-width: 200px;
+      width: 200px;
     }
   }
 
@@ -239,60 +282,89 @@
     fill: var(--primary-font-color);
   }
 
-  &__points {
-    display: none;
-    text-align: right;
-    margin: right;
-
+  &__right-side {
+    
     @include medium {
-      display: contents;
+      display: flex;
+      flex-direction: column-reverse;
+
+    }
+
+    @include large {
+      display: flex;
+      flex-direction: column-reverse;
+
     }
   }
 
-  &__points-ul {
-    padding-top: 56px;
+  &__points {
+    display: none;
 
-    &:last-child {
-      padding-top: 0;
+    @include medium {
+
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      font-family: Montserrat;
     }
   }
 
   &__points-numbers {
+
     color: black;
-    font-family: Montserrat;
-    font-size: 46px;
     font-style: normal;
+    font-size: 28px;
     font-weight: 900;
     line-height: normal;
-    letter-spacing: 1.84px;
-  }
+    margin-top: 20px;
 
-  &__points-names {
-    color: var(--primary-font-color);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-bottom: 16px;
-  }
-
-  &__picture-wrapper {
-    margin-left: 63px;
-
-    @include small {
-      margin-left: 222px;
-      margin-top: -95px;
-    }
-
-    @include medium {
-      margin-left: 378px;
-      margin-top: -310px;
+    &:first-child {
+      padding-top: 0;
     }
 
     @include large {
-      margin-left: 620px;
-      margin-top: -510px;
+      font-size: 46px;
+      letter-spacing: 1.84px;
+      padding-top: 26px;
+    }
+  }
+
+
+  &__points-names {
+    color: var(--primary-font-color);
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: right;
+    padding-top: 4px;
+
+    @include large {
+      font-size: 14px;
+    }
+  }
+
+
+  &__picture-wrapper {
+
+    margin-left: 63px;
+
+    @include small {
+      float: right;
+      margin-top: -94px;
+
+    }
+
+    @include medium {
+      margin-top: -83px;
+      float: right;
+      padding-right: 50px;
+    }
+
+    @include large {
+
+      margin-top: -208px;
+
     }
   }
 }
