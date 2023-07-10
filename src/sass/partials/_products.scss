@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
   @include medium {
     background: url(../images/background_tablet.png);
     background-repeat: no-repeat;
@@ -16,6 +16,7 @@
       background-position: center;
     }
   }
+}
 
 .head-products {
   display: block;
