@@ -9,18 +9,27 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    @include large {
-      background: url(../images/background_desktop.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+  }
+  @include large {
+    background: url(../images/background_desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
 .head-products {
   display: block;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @include medium {
+    padding-bottom: 80px;
+  }
+  @include large {
+    padding-bottom: 120px;
+  }
 }
 .head-products__discription {
   color: #131313;
@@ -29,7 +38,6 @@
   font-weight: 800;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  padding-top: 60px;
 
   @include large {
     font-size: 30px;
@@ -45,24 +53,16 @@
 }
 .products {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 60px;
-  margin-left: 25px;
-  margin-right: 25px;
   align-items: center;
+
   @include medium {
-    display: flex;
-    flex-direction: row;
-    margin-left: 25px;
-    margin-right: 25px;
-    gap: 40px;
+    flex-wrap: nowrap;
+    gap: 16px;
   }
   @include large {
-    display: flex;
-    flex-direction: row;
     gap: 29px;
-    margin-left: 25px;
-    margin-right: 25px;
     align-items: center;
   }
 }
@@ -70,16 +70,17 @@
   border-radius: 24px;
   display: block;
   text-align: center;
-  width: 280px;
+  width: 100%;
+  margin-bottom: 60px;
+
   @include medium {
-    width: 224px;
-    height: 548px;
-    margin-top: 120px;
-    margin-bottom: 60px;
-    width: calc((100% - 40px) / 3);
+    max-width: 224px;
+
+    //   margin-top: 120px;
+    //   margin-bottom: 60px;
   }
   @include large {
-    width: calc((100% - 29px) / 3);
+    max-width: 370px;
   }
 }
 .ice-cream__img {
