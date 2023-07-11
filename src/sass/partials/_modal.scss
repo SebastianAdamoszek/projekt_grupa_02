@@ -1,23 +1,22 @@
-.is-hidden{
+.is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
   scale: 0;
 }
 
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color:getShadow('third');
-  display: flex;    
+  background-color: getShadow('third');
+  display: flex;
   transition-property: opacity, scale, visibility;
   transition-duration: 1s;
-  z-index: 10;
+  z-index: 21;
 }
-
 
 .franchise-modal {
   padding: 28px;
@@ -85,7 +84,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    @include large{
+    @include large {
       padding: 0 95px;
       font-size: 20px;
       line-height: 28px;
@@ -101,7 +100,7 @@
     line-height: 140%;
     text-align: left;
     margin-bottom: 24px;
-    @include large{
+    @include large {
       padding: 0 32px;
       font-size: 16px;
     }
@@ -130,7 +129,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    @include large{
+    @include large {
       width: 368px;
     }
   }
@@ -148,7 +147,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    @include large{
+    @include large {
       width: 368px;
     }
   }

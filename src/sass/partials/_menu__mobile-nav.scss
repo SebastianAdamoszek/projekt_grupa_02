@@ -102,7 +102,7 @@
   display: flex;
   justify-content: center;
 
-  @include large {
+  @include medium {
     display: none;
   }
   &__btn1 {
