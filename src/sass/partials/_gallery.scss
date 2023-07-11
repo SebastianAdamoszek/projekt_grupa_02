@@ -22,4 +22,39 @@
       }
     }
   }
+  &__photo--second {
+    animation-name: hiddenImage2;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  &__photo--third {
+    animation-name: hiddenImage3;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes hiddenImage2 {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes hiddenImage3 {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
