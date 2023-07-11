@@ -46,7 +46,6 @@
   }
   &__toggle:hover > svg,
   &__toggle:focus > svg {
-    cursor: pointer;
   }
   &__btn {
     width: 114px;
@@ -64,7 +63,10 @@
   }
   &__btn:hover,
   &__btn:focus {
-    cursor: pointer;
+    scale: 1.05;
+    box-shadow: 1px  1px 3px #7caf55;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
   }
 }
 .franchise-container {

@@ -36,7 +36,7 @@
   }
   &__toggle:hover > svg,
   &__toggle:focus > svg {
-    cursor: pointer;
+
   }
 }
 .btn1 {
@@ -91,7 +91,7 @@
   &__link:hover,
   &__link:focus {
     color: var(--secondary-icon-color);
-    cursor: pointer;
+
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
