@@ -64,6 +64,7 @@
   color: var(--tertiary-border-color);
   @include medium {
     width: 114px;
+    padding-block: 11px;
   }
   @include large {
     font-size: 14px;
