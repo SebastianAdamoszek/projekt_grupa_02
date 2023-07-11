@@ -109,6 +109,7 @@
     &:hover .footer__icons-svg,
     &:focus .footer__icons-svg {
       fill: var(--primary-font-color);
+      transition: 250ms;
     }
   }
 
