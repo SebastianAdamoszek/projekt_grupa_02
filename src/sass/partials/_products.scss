@@ -85,6 +85,7 @@
     margin: 0 auto;
     margin-top: 168px;
     margin-bottom: 60px;
+    transition: 250ms;
     @include medium {
       width: 224px;
       height: 548px;
@@ -92,11 +93,11 @@
     }
     @include large {
       width: 370px;
-      transition: 250ms;
+     
     }
     &:hover,
     &:focus {
-      scale: 1.1;
+      scale: 1.05;
     }
     &--green {
       background-color: var(--primary-background-color);
