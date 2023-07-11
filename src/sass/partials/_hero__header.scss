@@ -3,23 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 12px;
-
-    @include small {
-      padding-top: 14px;
-    }
-
-    @include medium {
-      padding-top: 20px;
-      padding-left: 32px;
-      padding-right: 32px;
-
-      @include large {
-        padding: 0 16px;
-        padding-top: 8px;
-      }
-    }
-  }
+  } 
 
   &__logo {
     width: 40px;
@@ -355,13 +339,13 @@
     }
 
     @include medium {
-      margin-top: -100px;
+      margin-top: -110px;
       float: right;
       padding-right: 50px;
     }
 
     @include large {
-      margin-top: -197px;
+      margin-top: -205px;
     }
   }
 }
