@@ -1,30 +1,46 @@
-.is-hidden .franchise-modal {
-  transform: scale(0);
+.is-hidden{
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  scale: 0;
 }
-.franchise-modal {
+
+.backdrop{
   position: fixed;
-  background-color: #84a178;
-  inset: 0;
-  transform: translateX(100%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:getShadow('third');
+  display: flex;    
+  transition-property: opacity, scale, visibility;
+  transition-duration: 1s;
+  z-index: 10;
 }
+
+
 .franchise-modal {
+  padding: 28px;
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 100%;
-  height: 100%;
+  max-width: 280px;
+  max-height: 100%;
   border-radius: 10px;
   border: 2px solid var(--quaternary-background-color);
   background: var(--primary-modal-background-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.2s ease-in;
   text-align: center;
+  @include large {
+    max-width: 568px;
+  }
   &__toggle {
     position: absolute;
     fill: var(--secondary-icon-color);
     font-size: 32px;
     right: 12px;
-    top: 12px;
+    top: 0;
     background-color: transparent;
     border: none;
   }
@@ -55,18 +71,23 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 28px 28px 28px 28px;
+
   justify-content: left;
   align-items: center;
 
   &__tittle {
     color: var(--secondary-font-color);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Seymour One;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    @include large{
+      padding: 0 95px;
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 
   &__text {
@@ -76,6 +97,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    text-align: left;
+    margin-bottom: 24px;
+    @include large{
+      padding: 0 32px;
+      font-size: 16px;
+    }
   }
 }
 
@@ -101,6 +128,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    @include large{
+      width: 368px;
+    }
   }
   &__textarea {
     padding-left: 12px;
@@ -116,6 +146,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    @include large{
+      width: 368px;
+    }
   }
 }
 
