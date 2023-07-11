@@ -33,10 +33,11 @@
   display: block;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   @include medium {
     padding-bottom: 80px;
+    padding-bottom: 0;
   }
   @include large {
     padding-bottom: 120px;
@@ -73,6 +74,7 @@
   @include medium {
     flex-wrap: nowrap;
     gap: 16px;
+    padding-top: 0;
   }
   @include large {
     gap: 29px;
@@ -87,7 +89,7 @@
     transition: 250ms;
     @include medium {
       width: 224px;
-      height: 548px;
+      height: 500px;
       margin-top: 200px;
     }
     @include large {
