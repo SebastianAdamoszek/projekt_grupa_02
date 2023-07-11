@@ -73,17 +73,20 @@
   gap: 32px;
   padding-bottom: 114px;
   white-space: nowrap;
-  @include large {
+  @include medium {
     gap: 40px;
   }
   &__link {
     color: var(--primary-font-color);
-    font-size: 48px;
+    font-size: 32px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     letter-spacing: 0.8px;
     text-decoration: none;
     line-height: normal;
+    @include medium {
+     font-size: 48px;
+  }
   }
   &__link:hover,
   &__link:focus {
