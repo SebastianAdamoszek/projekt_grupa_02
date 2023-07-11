@@ -219,19 +219,19 @@
       display: contents;
       display: flex;
       padding-top: 12px;
-      
     }
-    
+
     @include large {
       padding-top: 42px;
     }
   }
-  &__ice-balls picture:focus,
-  &__ice-balls picture:hover {
+  &__picture {
+    transition: transform 1s ease-in-out;
+    &:hover {
       transform: rotate(360deg);
-      transition: 1.5s;
     }
-  
+  }
+
   &__text-middle {
     display: none;
 
@@ -333,7 +333,7 @@
 
   &__picture-wrapper {
     margin-left: 63px;
-    
+
     @include small {
       float: right;
       margin-top: -94px;
@@ -352,7 +352,6 @@
   &__picture-wrapper:hover,
   &__picture-wrapper:focus {
     scale: 1.05;
-    transition: 250ms;    
+    transition: 250ms;
   }
 }
-
