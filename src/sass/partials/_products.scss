@@ -92,6 +92,11 @@
     }
     @include large {
       width: 370px;
+      transition: 250ms;
+    }
+    &:hover,
+    &:focus {
+      scale: 1.1;
     }
     &--green {
       background-color: var(--primary-background-color);
@@ -150,6 +155,11 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    transition: 250ms;
+    &:hover,
+    &:active {
+      transform: translate(50%) scale(1.04);
+    }
   }
 }
 .ice-cream {
