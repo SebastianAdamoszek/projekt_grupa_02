@@ -1,5 +1,4 @@
 .header {
-
   &__container {
     display: flex;
     justify-content: space-between;
@@ -18,11 +17,8 @@
       @include large {
         padding: 0 16px;
         padding-top: 8px;
-
-
       }
     }
-
   }
 
   &__logo {
@@ -39,8 +35,6 @@
       width: 60px;
       height: 65px;
     }
-
-
   }
 
   &__nav {
@@ -104,7 +98,6 @@
     fill: white;
     background: transparent;
 
-
     @include large {
       display: none;
     }
@@ -122,9 +115,8 @@
   }
 
   @include large {
-    margin: 0
+    margin: 0;
   }
-
 }
 
 .hero {
@@ -166,7 +158,6 @@
   }
 
   &__left-side {
-
     @include medium {
       flex-direction: column;
       display: flex;
@@ -190,7 +181,6 @@
     margin-top: 50px;
     margin-bottom: 32px;
 
-
     @include small {
       margin-top: 40px;
     }
@@ -205,18 +195,15 @@
       font-size: 38px;
       margin-bottom: 28px;
       margin-top: 0;
-
     }
 
     &--bigger {
       font-size: 32px;
     }
-
   }
 
   &__picture {
     margin-top: 19px;
-
   }
 
   &__buttons {
@@ -235,7 +222,6 @@
 
     @include large {
       padding-top: 42px;
-
     }
   }
 
@@ -283,17 +269,14 @@
   }
 
   &__right-side {
-    
     @include medium {
       display: flex;
       flex-direction: column-reverse;
-
     }
 
     @include large {
       display: flex;
       flex-direction: column-reverse;
-
     }
   }
 
@@ -301,7 +284,6 @@
     display: none;
 
     @include medium {
-
       display: flex;
       flex-direction: column;
       text-align: right;
@@ -310,7 +292,6 @@
   }
 
   &__points-numbers {
-
     color: black;
     font-style: normal;
     font-size: 28px;
@@ -329,7 +310,6 @@
     }
   }
 
-
   &__points-names {
     color: var(--primary-font-color);
     font-size: 8px;
@@ -344,15 +324,12 @@
     }
   }
 
-
   &__picture-wrapper {
-
     margin-left: 63px;
 
     @include small {
       float: right;
       margin-top: -94px;
-
     }
 
     @include medium {
@@ -362,9 +339,13 @@
     }
 
     @include large {
-
       margin-top: -208px;
-
     }
   }
+  &__picture-wrapper:hover,
+  &__picture-wrapper:focus {
+    scale: 1.05;
+    transition: 250ms;
+  }
 }
+
