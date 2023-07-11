@@ -202,9 +202,7 @@
     }
   }
 
-  &__picture {
-    margin-top: 19px;
-  }
+
 
   &__buttons {
     display: flex;
@@ -218,6 +216,7 @@
       display: contents;
       display: flex;
       padding-top: 12px;
+      padding-bottom: 20px;
     }
 
     @include large {
