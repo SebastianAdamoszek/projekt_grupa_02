@@ -2,6 +2,7 @@
 @use '../utils/mixins.scss' as *;
 
 .button-products {
+  font-family: Montserrat;
   width: 100%;
   width: 108px;
   height: 38px;
@@ -9,6 +10,10 @@
   border: 2px solid var(--tertiary-border-color);
   border-radius: 8px;
   background: none;
+  padding: 11px 26px;
+  color: #000;
+  font-weight: 600;
+
   @include large {
     height: 42px;
     width: 134px;
@@ -57,12 +62,15 @@
 }
 
 .button-how-its-made {
+  font-family: Montserrat;
   font-size: 12px;
   padding-block: 11px;
+  font-weight: 600;
   border: none;
   background: none;
   text-decoration: underline;
   color: var(--tertiary-border-color);
+
   @include medium {
     width: 114px;
   }
