@@ -3,7 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  } 
+    padding-top: 12px;
+
+    @include small {
+      padding-top: 14px;
+    }
+    @include medium {
+      padding-top: 20px;
+    }
+    @include large {
+      padding-top: 18px;
+    }
+  }
 
   &__logo {
     width: 40px;
@@ -336,17 +347,17 @@
 
     @include small {
       float: right;
-      margin-top: -94px;
+      margin-top: -93px;
     }
 
     @include medium {
-      margin-top: -99px;
+      margin-top: -100px;
       float: right;
       padding-right: 50px;
     }
 
     @include large {
-      margin-top: -208px;
+      margin-top: -197px;
     }
   }
 }
