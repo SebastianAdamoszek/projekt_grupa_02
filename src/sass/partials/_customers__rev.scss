@@ -2,16 +2,40 @@
 
 .customer-reviews {
   background-image: url(../images/background_mobile.png);
-  padding-top: 178px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 174px;
   padding-bottom: 413px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background_mobile@2x.png);
+  }
+  @include small {
+    padding-top: 235px;
+  }
   @include medium {
     background-image: url(../images/background_tablet.png);
     padding-top: 283px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background_tablet@2x.png);
+    }
   }
   @include large {
     background-image: url(../images/background_desktop.png);
-    padding-top: 422px;
+    padding-top: 464px;
     padding-bottom: 228px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background_desktop@2x.png);
+    }
   }
 
   &__title {
