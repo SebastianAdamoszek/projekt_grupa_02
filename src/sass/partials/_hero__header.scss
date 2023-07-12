@@ -123,7 +123,6 @@
   @include small {
     background-image: url(../images/hero-dots-480.png);
     background-position: bottom right;
-
     height: 349px;
   }
 
@@ -137,7 +136,7 @@
   @include large {
     background-image: url(../images/hero-dots-desktop.png);
     background-position: bottom;
-    height: 591px;
+    height: 100%;
     padding-top: 45px;
   }
 
