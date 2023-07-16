@@ -3,7 +3,7 @@ body {
   color: var(--primary-font-color);
   font-family: 'Montserrat', sans-serif;
   // cursor: url('../images/cursor.svg'), auto;
-cursor: url('../images/ice-cream-svgrepo-com.svg'), auto;
+  cursor: url('../images/ice-cream-svgrepo-com.svg'), auto;
 }
 
 * {
@@ -14,6 +14,7 @@ cursor: url('../images/ice-cream-svgrepo-com.svg'), auto;
 
 a {
   text-decoration: none;
+  cursor: url('../images/cursor.svg'), auto;
 }
 
 ul {
@@ -22,6 +23,7 @@ ul {
 
 button {
   font-weight: 600;
+  cursor: url('../images/cursor.svg'), auto;
 }
 
 img {
