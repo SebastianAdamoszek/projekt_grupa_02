@@ -13,6 +13,9 @@
   padding: 11px 26px;
   color: #000;
   font-weight: 600;
+  transition-property: border-color color;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @include large {
     height: 42px;
@@ -44,6 +47,9 @@
   border: none;
   border-radius: 10px;
   background: var(--tertiary-border-color);
+  transition-property: background-color color fill;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: var(--quaternary-border-color);
   }
@@ -70,6 +76,9 @@
   background: none;
   text-decoration: underline;
   color: var(--tertiary-border-color);
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @include medium {
     width: 114px;
