@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://sebastianadamoszek.github.io/goit-project-js-2",
+  "homepage": "https://sebastianadamoszek.github.io/projekt_grupa_02",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-project-js-2/"
+    "build": "parcel build src/*.html --public-url /projekt_grupa_02/"
   },
   "repository": {
     "type": "git",
