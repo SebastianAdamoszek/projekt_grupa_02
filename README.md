@@ -1,3 +1,5 @@
+https://sebastianadamoszek.github.io/projekt_grupa_02/
+
 # parcel-project-template
 
 ## Zalezności
